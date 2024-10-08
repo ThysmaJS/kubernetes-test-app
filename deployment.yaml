@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubernetes-test-app
+  labels:
+    app: kubernetes-test-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubernetes-test-app
+  template:
+    metadata:
+      labels:
+        app: kubernetes-test-app
+    spec:
+      containers:
+        - name: kubernetes-test-app
+          image: your-dockerhub-username/kubernetes-test-app:latest
+          ports:
+            - containerPort: 3000
