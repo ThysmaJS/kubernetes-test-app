@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: kubernetes-test-app
-          image: your-dockerhub-username/kubernetes-test-app:latest
+          image: kubernetes-test-app:latest
           ports:
             - containerPort: 3000
