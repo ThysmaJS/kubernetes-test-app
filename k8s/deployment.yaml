@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kubernetes-test-app
-  namespace: deployName
+  namespace: default
   labels:
     app: kubernetes-test-app
 spec:
